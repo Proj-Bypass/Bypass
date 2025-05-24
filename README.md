@@ -21,7 +21,7 @@ Bypass combines an ESP32 microcontroller, RFID technology, and a web-based inter
 - **Identification:** RFID (MFRC522 module)
 - **Database:** MySQL (in development)
 - **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Node.js (planned)
+- **Backend:** PHP and Node.js (planned)
 - **Other Components:** Servo motor, buzzer, LEDs
 
 ## ⚙️ How It Works
