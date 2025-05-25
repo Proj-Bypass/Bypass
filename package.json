@@ -4,7 +4,8 @@
   "description": "bypass is a low-cost and open-source entry control system",
   "main": "index.js",
   "scripts": {
-    "test": "npm"
+    "test": "npm",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,9 @@
   "homepage": "https://github.com/Proj-Bypass/Bypass#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.7",
+    "@tailwindcss/vite": "^4.1.7"
+  },
+  "devDependencies": {
     "tailwindcss": "^4.1.7"
   }
 }

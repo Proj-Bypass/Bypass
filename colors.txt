@@ -1,0 +1,4 @@
+rosa: '#e31a5a',
+azul: '#041562',
+preto: '#1f1f20',
+branco: '#f6f1f6',
