@@ -1,0 +1,26 @@
+{
+  "name": "bypass",
+  "version": "1.0.0",
+  "description": "bypass is a low-cost and open-source entry control system",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Proj-Bypass/Bypass.git"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "Felipe Buche",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Proj-Bypass/Bypass/issues"
+  },
+  "homepage": "https://github.com/Proj-Bypass/Bypass#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}
