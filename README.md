@@ -43,14 +43,6 @@ O **Bypass** é um sistema inovador de controle de acesso via RFID, projetado es
 4. **Registro**: Log completo da transação é armazenado
 5. **Notificação**: Responsáveis recebem alertas quando necessário
 
-## 🎪 Easter Egg
-
-O projeto inclui um divertido easter egg! Digite `d` no Monitor Serial do Arduino para ativar o **Modo Disco** - uma festa completa com LEDs piscando e servo motor dançando! 🕺💃
-
-## 📱 Demo Online
-
-Acesse a demonstração em: [https://proj-bypass.github.io/Bypass/](https://proj-bypass.github.io/Bypass/)
-
 ## 📋 Estrutura do Projeto
 
 ```
