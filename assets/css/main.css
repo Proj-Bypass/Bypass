@@ -1,1 +1,116 @@
-/** FONTE 29LT BUKRA SEMI WIDE: font-family: "F29LT Bukra SmBd";/*
+/** FONTE 29LT BUKRA SEMI WIDE: font-family: "F29LT Bukra SmBd"; */
+
+/*! Cores do tema */
+/*! Azul: #041562 */
+/*! Cranberry: #e31a5a */
+/*! Preto: #1f1f20 */
+/*! Branco: #f6f1f6*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #f6f1f6;
+    color: #1f1f20;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2 {
+    font-family: 'F29LT Bukra SmBd';
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 7rem;
+    background: linear-gradient(to bottom,  #032045, #041562); /* Gradiente para cor mais escura */
+    padding: 20px;
+    text-align: center;
+}
+
+.div-logo {
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 100%;
+}
+.logo {
+    display: flex;
+    width: 250px;
+    height: auto;
+}
+
+.div-acesso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 100%;
+}
+
+.button-acess{
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    background-color: #e31a5a;
+    color: #f6f1f6;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-acess:hover {
+    background-color: #f6f1f6;
+    color: #e31a5a;
+    transition: 0.5s;
+}
+
+.div-title {
+    background-color: #f6f1f6;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    text-align: center;
+}
+
+.div-presentation {
+    color: #f6f1f6;
+    background-color: #e31a5a;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    text-align: center;
+}
+
+.div-presentation h2 {
+    font-size: 36px;
+    display: table-column;
+}
+
+.div-presentation p {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    text-align: justify;
+    justify-content: justify;
+    margin-right: 25px 0;
+}
+

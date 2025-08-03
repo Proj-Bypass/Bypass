@@ -14,4 +14,8 @@
 
     <link href="https://db.onlinewebfonts.com/c/78a0ee0cd1e188da30949e888b8ef4b9?family=F29LT+Bukra+SmBd" rel="stylesheet">
 
+    <link rel="shortcut icon" type="imagex/png" href="../../../assets/img/ico-bypass.ico">
+
+    <link rel="stylesheet" href="../../../assets/css/main.css">
+
 </head>

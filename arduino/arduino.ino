@@ -138,6 +138,67 @@ void loop() {
       digitalWrite(LedVermelho, HIGH);
       moverServo(0);
       
+    } else if (comando == 'd') {
+      Serial.println("🎉 MODO DISCO ATIVADO! 🎉");
+      Serial.println("♪♫♪ LET'S DANCE! ♪♫♪");
+      
+      // Festa disco com LEDs e servo!
+      for (int ciclo = 0; ciclo < 3; ciclo++) {
+        // Sequência 1: LEDs alternados rápidos
+        for (int i = 0; i < 6; i++) {
+          digitalWrite(LedVerde, HIGH);
+          digitalWrite(LedVermelho, LOW);
+          delay(200);
+          digitalWrite(LedVerde, LOW);
+          digitalWrite(LedVermelho, HIGH);
+          delay(200);
+        }
+        
+        // Sequência 2: Servo dançando
+        digitalWrite(LedVerde, HIGH);
+        digitalWrite(LedVermelho, HIGH);
+        moverServo(45);
+        delay(300);
+        moverServo(135);
+        delay(300);
+        moverServo(45);
+        delay(300);
+        moverServo(90);
+        delay(400);
+        
+        // Sequência 3: LEDs estroboscópicos
+        digitalWrite(LedVerde, LOW);
+        digitalWrite(LedVermelho, LOW);
+        for (int strobe = 0; strobe < 8; strobe++) {
+          digitalWrite(LedVerde, HIGH);
+          digitalWrite(LedVermelho, HIGH);
+          delay(80);
+          digitalWrite(LedVerde, LOW);
+          digitalWrite(LedVermelho, LOW);
+          delay(80);
+        }
+      }
+      
+      // Final grandioso!
+      digitalWrite(LedVerde, HIGH);
+      digitalWrite(LedVermelho, HIGH);
+      for (int finale = 0; finale < 3; finale++) {
+        moverServo(180);
+        delay(400);
+        moverServo(0);
+        delay(400);
+      }
+      moverServo(90);
+      delay(800);
+      
+      // Volta ao normal
+      digitalWrite(LedVerde, LOW);
+      digitalWrite(LedVermelho, LOW);
+      moverServo(0);
+      
+      Serial.println("🎊 FESTA TERMINADA! 🎊");
+      Serial.println("Voltando ao modo normal...");
+      
     } else if (comando == 't') {
       Serial.println("========================================");
       Serial.println("=== INICIANDO TESTE COMPLETO ===");
