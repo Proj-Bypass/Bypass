@@ -89,12 +89,9 @@ Este projeto foi desenvolvido como uma solução real para problemas de controle
 - `o` - Desligar tudo
 - `n` - Simular acesso negado
 - `t` - Teste completo de componentes
-- `d` - 🎉 **Modo Disco!** 🎉
 
 ## 📞 Contato
 
-Desenvolvido para o Instituto Federal do Paraná - IFPR
+Email: felipe.buche.tds2023@gmail.com
 
 ---
-
-**⭐ Se gostou do projeto, não esqueça de dar uma estrela no repositório!**
