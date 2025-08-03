@@ -37,7 +37,7 @@ include __DIR__ . '/../include/header.php';
                 <div class="content-section projeto">
                     <h2>Como funciona o Bypass?</h2>
                     <p>O Bypass é uma catraca inteligente com controle de acesso via RFID, conectada a um sistema backend que valida, em tempo real, se o aluno pode ou não passar por ela, com base no seu horário de aula e permissões registradas. O projeto é dividido em três grandes pilares:</p>
-                    
+
                     <div class="pilares">
                         <div class="pilar">
                             <h4>Hardware inteligente:</h4>
@@ -69,5 +69,54 @@ include __DIR__ . '/../include/header.php';
             </div>
         </div>
 
+        <div class="div-status">
+            <div class="status-content">
+                <div class="content-section">
+                    <h2>Status atual</h2>
+                    <p>Até o momento, o projeto está em fase de desenvolvimento e testes. A parte de hardware já está em funcionamento básico, com leitura RFID integrada ao ESP32. O backend está em construção com PHP e MySQL, e o painel web está sendo estruturado para permitir a gestão completa do sistema.</p>
+                    <p>Além disso, o projeto está sendo estruturado de forma modular, para que seja possível adaptar o mesmo sistema a outras instituições, ou até mesmo a portarias de empresas e condomínios no futuro.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-idealizador">
+            <div class="idealizador-content">
+                <div class="content-section">
+                    <h2>Sobre o Desenvolvedor</h2>
+
+                    <div class="container-fluid px-0">
+                        <div class="row g-0 align-items-center">
+                            <!-- Coluna da foto -->
+                            <div class="col-lg-4 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+                                <div class="developer-photo-wrapper">
+                                    <img src="../../../assets/img/founderPhoto.jpg"
+                                        alt="Felipe Augusto Buche - Desenvolvedor do Projeto Bypass"
+                                        class="developer-photo img-fluid shadow-lg">
+                                </div>
+                            </div>
+
+                            <!-- Coluna do texto -->
+                            <div class="col-lg-8 col-md-7">
+                                <div class="developer-info ps-md-4">
+                                    <h3 class="developer-name mb-2">Felipe Augusto Buche</h3>
+                                    <p class="developer-title mb-3">Desenvolvedor e Idealizador do Projeto Bypass</p>
+
+                                    <div class="developer-description">
+                                        <p>Felipe Augusto Buche é estudante do 3º ano do Curso Técnico em Desenvolvimento de Sistemas no Instituto Federal do Paraná. Com foco em soluções tecnológicas aplicadas ao ambiente educacional, atua no desenvolvimento de sistemas embarcados e aplicações web voltadas à automação e melhoria de processos institucionais.</p>
+
+                                        <p class="mb-0">Atualmente, é responsável pela idealização e implementação do Bypass, contudo, possui experiência em programação, eletrônica aplicada e integração de sistemas, com ênfase na criação de soluções escaláveis, seguras e eficientes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 </body>
+
+<?php
+include __DIR__ . '/../include/footer.php';
+?>

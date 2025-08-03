@@ -1,11 +1,32 @@
+/*
+! ========================================
+! 🎨 BYPASS - SISTEMA DE CONTROLE DE ACESSO
+! ========================================
+! Projeto: Controle de Acesso Inteligente RFID
+! Instituição: Instituto Federal do Paraná
+! Desenvolvido: 2025
+! ========================================
+*/
+
+/*
+* ========================================
+* 📋 FONTE E PALETA DE CORES
+* ========================================
+*/
+
 /** FONTE 29LT BUKRA SEMI WIDE: font-family: "F29LT Bukra SmBd"; */
 
-/*! Cores do tema */
-/*! Azul: #041562 */
-/*! Cranberry: #e31a5a */
-/*! Preto: #1f1f20 */
-/*! Branco: #f6f1f6*/
+/*! PALETA DE CORES DO PROJETO */
+/*! 🔵 Azul Principal: #041562 */
+/*! 🌸 Cranberry: #e31a5a */
+/*! ⚫ Preto: #1f1f20 */
+/*! ⚪ Branco: #f6f1f6 */
 
+/*
+* ========================================
+* 🔧 CONFIGURAÇÕES GLOBAIS E RESET
+* ========================================
+*/
 
 * {
     margin: 0;
@@ -14,7 +35,7 @@
     font-family: Montserrat;
 }
 
-/* Configurações responsivas base */
+/* TODO: Configurações responsivas base */
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -26,15 +47,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-/* Imagens responsivas */
+/* ? Imagens responsivas globais */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Containers responsivos */
+/* ? Containers responsivos */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -42,18 +65,18 @@ img {
     padding: 0 20px;
 }
 
+/* ! Tipografia padrão */
 h1, h2, h3, h4 {
     font-family: 'F29LT Bukra SmBd';
     line-height: 1.3;
 }
 
-/* Links responsivos */
+/* TODO: Links e botões responsivos */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Botões responsivos */
 button {
     cursor: pointer;
     border: none;
@@ -61,6 +84,17 @@ button {
     transition: all 0.3s ease;
 }
 
+/* ! Elemento main sem margens */
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+* ========================================
+* 🏠 HEADER E NAVEGAÇÃO
+* ========================================
+*/
 
 .header{
     display: flex;
@@ -74,6 +108,7 @@ button {
     z-index: 1000;
 }
 
+/* ? Logo container */
 .div-logo {
     margin-left: 5rem;
     display: flex;
@@ -89,6 +124,7 @@ button {
     transition: all 0.3s ease;
 }
 
+/* ? Botão de acesso */
 .div-acesso {
     display: flex;
     justify-content: center;
@@ -111,12 +147,19 @@ button {
     white-space: nowrap;
 }
 
+/* ! Hover effect no botão */
 .button-acess:hover {
     background-color: #f6f1f6;
     color: #e31a5a;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+/*
+* ========================================
+* 📝 SEÇÃO DE TÍTULO PRINCIPAL
+* ========================================
+*/
 
 .div-title {
     background-color: #f6f1f6;
@@ -130,6 +173,7 @@ button {
     padding: 40px 20px;
 }
 
+/* TODO: Títulos responsivos com clamp */
 .div-title h1 {
     font-size: clamp(24px, 4vw, 42px);
     line-height: 1.2;
@@ -144,15 +188,22 @@ button {
     margin: 0 auto;
 }
 
+/*
+* ========================================
+* 🎨 SEÇÃO DE APRESENTAÇÃO DO PROJETO
+* ========================================
+*/
+
 .div-presentation {
     color: #f6f1f6;
     background-color: #e31a5a;
     margin-top: 15px;
+    margin-bottom: 0;
     padding: 40px 20px;
     min-height: auto;
 }
 
-/* Seção de introdução */
+/* ? Seção de introdução */
 .presentation-intro {
     text-align: center;
     margin-bottom: 40px;
@@ -173,13 +224,13 @@ button {
     text-align: justify;
 }
 
-/* Container do conteúdo principal */
+/* TODO: Container do conteúdo principal */
 .presentation-content {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Seções de conteúdo */
+/* ? Seções de conteúdo */
 .content-section {
     margin-bottom: 40px;
     text-align: left;
@@ -200,7 +251,13 @@ button {
     text-align: justify;
 }
 
-/* Container dos pilares */
+/*
+* ========================================
+* ⚙️ SEÇÃO DOS PILARES DO PROJETO
+* ========================================
+*/
+
+/* ! Container dos pilares em grid */
 .pilares {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -236,6 +293,7 @@ button {
     position: relative;
 }
 
+/* TODO: Setas customizadas nas listas */
 .pilar li::before {
     content: "→";
     position: absolute;
@@ -244,7 +302,270 @@ button {
     font-weight: bold;
 }
 
-/* Responsividade */
+/*
+* ========================================
+* 🧪 SEÇÃO DE STATUS DO PROJETO
+* ========================================
+*/
+
+.div-status {
+    color: #1f1f20;
+    background-color: #f6f1f6;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 40px 20px;
+    min-height: auto;
+}
+
+/* TODO: Container do conteúdo de status */
+.status-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ? Títulos específicos da seção de status */
+.div-status .content-section h2 {
+    color: #1f1f20;
+}
+
+/*
+* ========================================
+* 👨‍💻 SEÇÃO DO IDEALIZADOR
+* ========================================
+*/
+
+.div-idealizador {
+    color: #f6f1f6;
+    background-color: #041562;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 40px 20px;
+    min-height: auto;
+}
+
+/* TODO: Container do conteúdo do idealizador */
+.idealizador-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ? Estilos específicos da seção do desenvolvedor */
+.developer-photo-wrapper {
+    max-width: 320px;
+    width: 100%;
+}
+
+.developer-photo {
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid rgba(246, 241, 246, 0.3);
+    transition: all 0.3s ease;
+}
+
+.developer-photo:hover {
+    transform: scale(1.05);
+    border-color: rgba(246, 241, 246, 0.6);
+}
+
+.developer-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f6f1f6;
+    font-family: 'F29LT Bukra SmBd';
+    margin-bottom: 10px;
+}
+
+.developer-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(246, 241, 246, 0.9);
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.developer-description p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(246, 241, 246, 0.9);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/*
+* ========================================
+* 💻 SEÇÃO DE TECNOLOGIAS
+* ========================================
+*/
+
+/* ? Grid de tecnologias */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 800px;
+    margin: 20px auto 0;
+}
+
+.tech-item {
+    background-color: rgba(4, 21, 98, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #041562;
+    transition: all 0.3s ease;
+}
+
+/* ! Hover effect nos cards de tecnologia */
+.tech-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(4, 21, 98, 0.2);
+    background-color: rgba(4, 21, 98, 0.15);
+}
+
+.tech-item h4 {
+    color: #041562;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'F29LT Bukra SmBd';
+}
+
+.tech-item p {
+    color: #1f1f20;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/*
+* ========================================
+* 🦶 FOOTER - RODAPÉ DO SITE
+* ========================================
+*/
+
+.main-footer {
+    background: linear-gradient(135deg, #1f1f20 0%, #080808 100%);
+    color: #f6f1f6;
+    padding: 50px 0 0;
+    margin: 0;
+    margin-top: 0 !important;
+}
+
+/* ? Grid do conteúdo do footer */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+/* TODO: Títulos do footer */
+.footer-section h3,
+.footer-section h4 {
+    font-family: 'F29LT Bukra SmBd';
+    color: #f6f1f6;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* ? Logo do footer */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    width: 50px;
+    height: auto;
+}
+
+.footer-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(246, 241, 246, 0.8);
+    margin-bottom: 20px;
+}
+
+/* TODO: Links do footer */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgba(246, 241, 246, 0.8);
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* ! Hover effect nos links */
+.footer-links a:hover {
+    color: #e31a5a;
+    padding-left: 10px;
+}
+
+
+
+/* TODO: Seção de contato */
+.footer-contact p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(246, 241, 246, 0.8);
+}
+
+.footer-contact strong {
+    color: #f6f1f6;
+}
+
+
+
+/* ? Parte inferior do footer */
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    padding: 25px 0;
+    border-top: 1px solid rgba(246, 241, 246, 0.1);
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: rgba(246, 241, 246, 0.7);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-bottom p:first-child {
+    font-weight: 600;
+    color: #f6f1f6;
+    margin-bottom: 5px;
+}
+
+/*
+* ========================================
+* 📱 RESPONSIVIDADE - BREAKPOINTS
+* ========================================
+*/
+
+/* TODO: Desktop Large (1200px+) */
 @media (max-width: 1200px) {
     .div-logo {
         margin-left: 2rem;
@@ -255,6 +576,7 @@ button {
     }
 }
 
+/* ? Desktop Medium (992px - 1200px) */
 @media (max-width: 992px) {
     .header {
         height: 6rem;
@@ -291,6 +613,7 @@ button {
     }
 }
 
+/* ! Tablet/Mobile Large (768px - 992px) */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -339,6 +662,14 @@ button {
         padding: 30px 15px;
     }
     
+    .div-status {
+        padding: 30px 15px;
+    }
+    
+    .div-idealizador {
+        padding: 30px 15px;
+    }
+    
     .presentation-intro h3 {
         font-size: 28px;
     }
@@ -353,6 +684,26 @@ button {
     
     .content-section p {
         font-size: 16px;
+    }
+    
+    /* TODO: Desenvolvedor responsivo tablet */
+    .developer-photo {
+        max-width: 250px;
+        height: 300px;
+    }
+    
+    .developer-name {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .developer-title {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .developer-info {
+        text-align: center;
     }
     
     .pilares {
@@ -372,8 +723,51 @@ button {
     .pilar li {
         font-size: 15px;
     }
+    
+    /* TODO: Footer responsivo tablet */
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 30px auto 0;
+    }
+    
+    .tech-item {
+        padding: 20px;
+    }
+    
+    .tech-item h4 {
+        font-size: 18px;
+    }
+    
+    .tech-item p {
+        font-size: 15px;
+    }
+    
+    .main-footer {
+        padding: 40px 0 0;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-bottom-content {
+        padding: 0 15px;
+    }
 }
 
+/* ? Mobile Medium (576px - 768px) */
 @media (max-width: 576px) {
     .header {
         padding: 15px 10px;
@@ -407,6 +801,14 @@ button {
         padding: 25px 10px;
     }
     
+    .div-status {
+        padding: 25px 10px;
+    }
+    
+    .div-idealizador {
+        padding: 25px 10px;
+    }
+    
     .presentation-intro {
         margin-bottom: 30px;
     }
@@ -435,6 +837,25 @@ button {
         line-height: 1.5;
     }
     
+    /* TODO: Desenvolvedor mobile pequeno */
+    .developer-photo {
+        max-width: 220px;
+        height: 260px;
+    }
+    
+    .developer-name {
+        font-size: 24px;
+    }
+    
+    .developer-title {
+        font-size: 15px;
+    }
+    
+    .developer-description p {
+        font-size: 15px;
+        text-align: center;
+    }
+    
     .pilares {
         gap: 15px;
         margin-top: 15px;
@@ -455,8 +876,20 @@ button {
         margin-bottom: 10px;
         padding-left: 18px;
     }
+    
+    /* TODO: Footer mobile pequeno */
+    .footer-section h3,
+    .footer-section h4 {
+        font-size: 18px;
+    }
+    
+    .footer-description,
+    .footer-links a {
+        font-size: 15px;
+    }
 }
 
+/* ! Mobile Small (390px - 576px) */
 @media (max-width: 390px) {
     .div-title h1 {
         font-size: 20px !important;
@@ -482,6 +915,24 @@ button {
         font-size: 14px;
     }
     
+    /* TODO: Desenvolvedor mobile extra pequeno */
+    .developer-photo {
+        max-width: 180px;
+        height: 220px;
+    }
+    
+    .developer-name {
+        font-size: 20px;
+    }
+    
+    .developer-title {
+        font-size: 14px;
+    }
+    
+    .developer-description p {
+        font-size: 14px;
+    }
+    
     .pilar h4 {
         font-size: 15px;
     }
@@ -491,66 +942,9 @@ button {
     }
 }
 
-/* Seção de tecnologias */
-.tech-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 800px;
-    margin: 40px auto 0;
-}
-
-.tech-item {
-    background-color: rgba(4, 21, 98, 0.1);
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-    border: 2px solid #041562;
-    transition: all 0.3s ease;
-}
-
-.tech-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(4, 21, 98, 0.2);
-    background-color: rgba(4, 21, 98, 0.15);
-}
-
-.tech-item h4 {
-    color: #041562;
-    font-size: 20px;
-    margin-bottom: 15px;
-    font-family: 'F29LT Bukra SmBd';
-}
-
-.tech-item p {
-    color: #1f1f20;
-    font-size: 16px;
-    line-height: 1.4;
-    margin: 0;
-}
-
-/* Footer responsivo */
-footer {
-    margin-top: 40px !important;
-}
-
-@media (max-width: 768px) {
-    .tech-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin: 30px auto 0;
-    }
-    
-    .tech-item {
-        padding: 20px;
-    }
-    
-    .tech-item h4 {
-        font-size: 18px;
-    }
-    
-    .tech-item p {
-        font-size: 15px;
-    }
-}
+/*
+* ========================================
+* ✨ FIM DO ARQUIVO CSS
+* ========================================
+*/
 
