@@ -1,28 +1,43 @@
-<?php
-include __DIR__ . '/../include/header.php';
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bypass - Sistema de Controle de Acesso Inteligente</title>
 
-?>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://db.onlinewebfonts.com/c/78a0ee0cd1e188da30949e888b8ef4b9?family=F29LT+Bukra+SmBd" rel="stylesheet">
+
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/ico-bypass.ico">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
 
 <body>
     <header class="header">
         <div class="div-logo">
-            <a href="home.php"><img class="logo" src="../../../assets/img/logoBranca.png" alt=""></a>
+            <a href="index.html"><img class="logo" src="assets/img/logoBranca.png" alt="Bypass Logo"></a>
         </div>
 
         <div class="div-acesso">
-            <a href="login.php"><button class=button-acess>Acessar o sistema</button></a>
+            <a href="#sistema"><button class="button-acess">Conheça o Sistema</button></a>
         </div>
     </header>
 
     <main>
         <div class="div-title">
-            <h1 style="font-family: 'F29LT Bukra SmBd'; font-size: 42px;">Bypass: Mais que controle de acesso, uma experiência inteligente</h1>
-            <p style="font-size: 21px;">O projeto que promete revolucionar a tecnologia de gestão de acessos no âmbito escolar.</p>
+            <h1>Bypass: Mais que controle de acesso, uma experiência inteligente</h1>
+            <p>O projeto que promete revolucionar a tecnologia de gestão de acessos no âmbito escolar.</p>
         </div>
 
-        <div class="div-presentation">
+        <div class="div-presentation" id="sistema">
             <div class="presentation-intro">
                 <h3>Conheça agora o projeto e seu idealizador</h3>
                 <p>Imagine um colégio onde a entrada e saída de alunos são automatizadas, seguras, registradas em tempo real enquanto os responsáveis são notificados. Agora pare de imaginar: isso é o Bypass, um projeto inovador de automação escolar criado pensando na realidade de um colégio: o Instituto Federal do Paraná.</p>
@@ -69,5 +84,32 @@ include __DIR__ . '/../include/header.php';
             </div>
         </div>
 
+        <!-- Seção adicional sobre o projeto -->
+        <div class="div-title">
+            <h2>Tecnologias Utilizadas</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <h4>Hardware</h4>
+                    <p>ESP32, RFID RC522, Servo Motor, LEDs</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Backend</h4>
+                    <p>PHP, Apache Server, Banco de Dados</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Frontend</h4>
+                    <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer style="background-color: #041562; color: #f6f1f6; text-align: center; padding: 20px; margin-top: 40px;">
+        <p>&copy; 2025 Bypass - Sistema de Controle de Acesso Inteligente</p>
+        <p>Desenvolvido para o Instituto Federal do Paraná</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
+</html>
