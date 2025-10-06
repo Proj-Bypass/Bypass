@@ -12,8 +12,8 @@
 
 
 // Configurações da rede Wi-Fi
-const char* ssid = "Zhone_FB68";   // Substitua pelo SSID da sua rede
-const char* password = "znid309436008";  // Substitua pela senha da sua rede
+const char* ssid = "IFPR-Alunos";   // Substitua pelo SSID da sua rede
+const char* password = "";  // Substitua pela senha da sua rede
 
 // URL do servidor PHP
 const String serverUrl = "http://192.168.1.15/Bypass/index.php";

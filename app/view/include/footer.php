@@ -34,4 +34,6 @@
             <p>Desenvolvido para o Instituto Federal do Paraná</p>
         </div>
     </div>
+
+    <script src="../../../assets/js/functions.js"></script>
 </footer>
