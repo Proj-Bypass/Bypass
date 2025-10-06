@@ -46,7 +46,7 @@ include __DIR__ . '/../include/header.php';
                                     <button type="submit" class="btn-login w-100">Entrar</button>
                                 </form>
                                 
-                                <div class="login-footer mt-4 text-center">
+                                <div class="login-footer text-center">
                                     <p class="back-to-home">
                                         <a href="home.php" class="text-decoration-none">← Voltar à página inicial</a>
                                     </p>
