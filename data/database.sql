@@ -1,6 +1,7 @@
 -- =========================
 -- Banco: Bypass (MySQL)
 -- UTF8MB4 / InnoDB
+-- Versão de testes (senhas em texto simples)
 -- =========================
 
 CREATE DATABASE IF NOT EXISTS `Bypass` CHARACTER SET = 'utf8mb4' COLLATE = 'utf8mb4_unicode_ci';
@@ -15,8 +16,10 @@ CREATE TABLE IF NOT EXISTS `responsaveis` (
     `nome` VARCHAR(180) NOT NULL,
     `telefone` VARCHAR(40),
     `email` VARCHAR(200),
+    `cpf` VARCHAR(11) DEFAULT NULL,
     PRIMARY KEY (`id_responsavel`),
-    UNIQUE KEY `uk_responsaveis_email` (`email`)
+    UNIQUE KEY `uk_responsaveis_email` (`email`),
+    UNIQUE KEY `uk_responsaveis_cpf` (`cpf`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 
 -- -------------------------
@@ -71,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `alunos_projetos` (
 CREATE TABLE IF NOT EXISTS `logs_acesso` (
     `id_log` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
     `id_aluno` INT UNSIGNED NOT NULL,
-    `data_hora` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, -- timestamp do evento
+    `data_hora` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `tipo_acesso` ENUM('entrada', 'saida') NOT NULL,
     `data_hora_entrada` DATETIME NULL,
     `data_hora_saida` DATETIME NULL,
@@ -108,12 +111,13 @@ CREATE TABLE IF NOT EXISTS `notificacoes` (
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 
 -- -------------------------
--- Tabela: usuarios_sistema (simples, senha em texto por agora)
+-- Tabela: usuarios_sistema (simples, senha em texto por enquanto)
 -- -------------------------
 CREATE TABLE IF NOT EXISTS `usuarios_sistema` (
     `id_usuario` INT UNSIGNED NOT NULL AUTO_INCREMENT,
     `nome` VARCHAR(180) NOT NULL,
     `email` VARCHAR(200) NOT NULL,
+    `cpf` VARCHAR(11) DEFAULT NULL,
     `senha` VARCHAR(255) NOT NULL, -- senha em texto simples (apenas para testes)
     `tipo_usuario` ENUM(
         'admin',
@@ -123,7 +127,8 @@ CREATE TABLE IF NOT EXISTS `usuarios_sistema` (
     `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` DATETIME DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (`id_usuario`),
-    UNIQUE KEY `uk_usuarios_email` (`email`)
+    UNIQUE KEY `uk_usuarios_email` (`email`),
+    UNIQUE KEY `uk_usuarios_cpf` (`cpf`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 
 -- -------------------------
@@ -194,19 +199,21 @@ FROM
 ORDER BY l.id_aluno, l.data_hora DESC;
 
 -- -------------------------
--- Inserção: primeiro administrador (senha em texto simples)
+-- Inserção: primeiro administrador (CPF e senha em texto simples)
 -- -------------------------
 INSERT INTO
     `usuarios_sistema` (
         `nome`,
         `email`,
+        `cpf`,
         `senha`,
         `tipo_usuario`
     )
 VALUES (
-        'ADMINISTRADOR',
-        'patv591@gmail.com',
-        'admin123',
+        'Administrador Geral',
+        'admin@bypass.com',
+        '11122233344', -- CPF (11 dígitos, sem pontuação)
+        'admin123', -- senha em texto (APENAS PARA TESTES LOCAIS)
         'admin'
     );
 
