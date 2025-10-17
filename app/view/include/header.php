@@ -1,3 +1,7 @@
+<?php
+require_once(__DIR__ . '/../../util/config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,9 +18,9 @@
 
     <link href="https://db.onlinewebfonts.com/c/78a0ee0cd1e188da30949e888b8ef4b9?family=F29LT+Bukra+SmBd" rel="stylesheet">
 
-    <link rel="shortcut icon" type="imagex/png" href="../../../assets/img/ico-bypass.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/ico-bypass.ico">
 
-    <link rel="stylesheet" href="../../../assets/css/main.css">
+    <link rel="stylesheet" href="<?= BASE_URL . '/assets/css/main.css' ?>">
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

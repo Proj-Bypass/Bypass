@@ -30,7 +30,7 @@
 
     <div class="footer-bottom">
         <div class="footer-bottom-content">
-            <p>&copy; 2025 Bypass - Sistema de Controle de Acesso Inteligente</p>
+            <p>&copy; <?= date('Y') ?> Bypass - Sistema de Controle de Acesso Inteligente</p>
             <p>Desenvolvido para o Instituto Federal do Paraná</p>
         </div>
     </div>

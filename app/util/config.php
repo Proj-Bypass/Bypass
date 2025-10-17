@@ -11,5 +11,18 @@ define("DB_USER", "root");
 define("DB_PASSWORD", "");
 
 //configurações adicionais
-define("VERBOSE", true);
-//define("VERBOSE",  false); Esse não deve aparecer para o usuário final
+
+//ambiente de desenvolvedor
+define('AMB_DEV', true); //definir como false para desligar
+
+if(AMB_DEV == true){
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+    
+    define("BASE_URL", "C:/xampp/htdocs/Bypass/");
+}
+
+if (AMB_DEV == false) {
+    error_reporting(0);
+    ini_set('display_errors', 0);
+}
